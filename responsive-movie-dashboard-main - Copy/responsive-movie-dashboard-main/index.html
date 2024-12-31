@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--=============== REMIXICONS ===============-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+   <!--=============== SWIPER CSS ===============-->
+   <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="assets/css/styles.css">
+   <link rel="stylesheet" href="assets/css/slider.css">
+   <link rel="stylesheet" href="assets/css/Footer.css">
+
+
+   <style>
+      #logout:hover {
+         background-color: red;
+         color: white;
+         padding: 0.5rem 1rem;
+         border-radius: 0.5rem;
+         transition: background-color 0.3s ease-in-out, color 0.3s ease;
+      }
+   </style>
+
+   <title>Responsive movie dashboard - CodeWithTurn</title>
+</head>
+
+<body>
+   <img src="assets/img/banner.png" alt="image" class="bg__image">
+   <div class="bg__blur"></div>
+
+   <!--==================== HEADER ====================-->
+   <header class="header" id="header">
+      <div class="header__content">
+         <a href="#" class="header__logo">Eliplis</a>
+
+         <div class="header__actions">
+            <i class="ri-notification-2-line"></i>
+            <i class="ri-account-circle-line"></i>
+
+            <div class="header__menu" id="header-menu">
+               <i class="ri-menu-line"></i>
+            </div>
+         </div>
+      </div>
+
+      <form action="" class="header__search">
+         <i class="ri-search-line"></i>
+         <input type="search" placeholder="Search movies" class="header__input">
+      </form>
+   </header>
+
+   <!--==================== NAV ====================-->
+   <nav class="nav" id="nav">
+      <div class="nav__menu">
+         <a href="#" class="nav__logo">ECLIPSE</a>
+
+         <ul class="nav__list">
+            <li class="nav__item">
+               <a href="#" class="nav__link">
+                  <i class="ri-home-5-line"></i> <span>Home</span>
+               </a>
+            </li>
+
+            <li class="nav__item">
+               <a href="#" class="nav__link">
+                  <!-- Updated IconScout Film Reel SVG with white color -->
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="film-reel" width="20" height="20"
+                     fill="currentColor">
+                     <path
+                        d="M22,12A10,10,0,1,0,12,22H22V19H20v1H18A10,10,0,0,0,22,12ZM8.67,16.23A2,2,0,1,1,9.4,13.5,2,2,0,0,1,8.67,16.23ZM9.4,10.5a2,2,0,1,1-.73-2.73h0A2,2,0,0,1,9.4,10.5ZM12,19a2,2,0,1,1,2-2A2,2,0,0,1,12,19ZM12,9a2,2,0,1,1,2-2A2,2,0,0,1,12,9Zm6.06,6.5a2,2,0,1,1-.73-2.73A2,2,0,0,1,18.06,15.5Zm-.73-4.27h0a2,2,0,0,1-2.73-.73,2,2,0,1,1,2.73.73Z">
+                     </path>
+                  </svg>
+                  <span>Movies</span>
+               </a>
+            </li>
+
+            <li class="nav__item">
+               <a href="#" class="nav__link">
+                  <i class="ri-film-line"></i> <span>Series</span>
+               </a>
+            </li>
+
+            <li class="nav__item">
+               <a href="#" class="nav__link">
+                  <i class="ri-heart-3-line"></i> <span>Favorites</span>
+               </a>
+            </li>
+            <li class="nav__item">
+               <a href="#" class="nav__link">
+                  <i class="ri-movie-line"></i> <span>Coming Soon</span>
+               </a>
+            </li>
+         </ul>
+
+         <div>
+            <h3 class="nav__title">Account</h3>
+
+            <ul class="nav__list">
+               <li class="nav__item">
+                  <a href="#" class="nav__link">
+                     <i class="ri-account-circle-line"></i> <span>Profile</span>
+                  </a>
+               </li>
+
+               <li class="nav__item">
+                  <a href="#" class="nav__link">
+                     <i class="ri-account-circle-fill"></i> <span>Profile 2</span>
+                  </a>
+               </li>
+            </ul>
+         </div>
+      </div>
+
+      <a href="#" class="nav__link" id="logout">
+         <i class="ri-logout-box-line"></i> <span>Log Out</span>
+      </a>
+
+      <div class="nav__close" id="nav-close">
+         <i class="ri-close-line"></i>
+      </div>
+   </nav>
+
+
+
+   <!--==================== DASHBOARD ====================-->
+   <main class="main">
+      <!--==================== BANNER ====================-->
+      <div class="slider">
+         <div class="slider__wrapper">
+            <!-- Slide 1 -->
+            <div class="slider__item">
+               <img src="assets/img/movie-1.png" alt="Slide 1" class="slider__img" />
+               <div class="slider__shadow"></div>
+               <div class="slider__data">
+                  <h2 class="slider__title">Slide 1 Title</h2>
+                  <p class="slider__description">This is the description for Slide 1.</p>
+               </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slider__item">
+               <img src="assets/img/movie-2.png" alt="Slide 2" class="slider__img" />
+               <div class="slider__shadow"></div>
+               <div class="slider__data">
+                  <h2 class="slider__title">Slide 2 Title</h2>
+                  <p class="slider__description">This is the description for Slide 2.</p>
+               </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slider__item">
+               <img src="assets/img/movie-3.png" alt="Slide 3" class="slider__img" />
+               <div class="slider__shadow"></div>
+               <div class="slider__data">
+                  <h2 class="slider__title">Slide 3 Title</h2>
+                  <p class="slider__description">This is the description for Slide 3.</p>
+               </div>
+            </div>
+            <!-- slide 4 -->
+            <div class="slider__item">
+               <img src="assets/img/movie-4.png" alt="Slide 3" class="slider__img" />
+               <div class="slider__shadow"></div>
+               <div class="slider__data">
+                  <h2 class="slider__title">Slide 3 Title</h2>
+                  <p class="slider__description">This is the description for Slide 3.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+        <!-- =================Top5 Movie================ -->
+         <section class="image-slider">
+    <h3 class="slider-title">Top 10 Movie</h3>
+
+    <div class="slider-container">
+        <div class="slider-wrapper" id="sliderWrapper1">
+            <!-- First set of 6 images -->
+            <div class="slider-set">
+                <div class="slider-card">
+                    <img src="assets/img/new-1.png" alt="Image 1">
+                    <div class="overlay">
+                        <h3 class="slider-name animated-text top1">Top 1</h3>
+                    </div>
+                </div>
+                <div class="slider-card">
+                    <img src="assets/img/new-2.png" alt="Image 2">
+                    <div class="overlay">
+                        <h3 class="slider-name animated-text top2">Top 2</h3>
+                    </div>
+                </div>
+                <div class="slider-card">
+                    <img src="assets/img/new-3.png" alt="Image 3">
+                    <div class="overlay">
+                        <h3 class="slider-name animated-text top3">Top 3</h3>
+                    </div>
+                </div>
+                <div class="slider-card">
+                    <img src="assets/img/new-4.png" alt="Image 4">
+                    <div class="overlay">
+                        <h3 class="slider-name animated-text top4">Top 4</h3>
+                    </div>
+                </div>
+                <div class="slider-card">
+                    <img src="assets/img/new-5.png" alt="Image 5">
+                    <div class="overlay">
+                        <h3 class="slider-name animated-text top5">Top 5</h3>
+                    </div>
+                </div>
+                <div class="slider-card">
+                    <img src="assets/img/new-6.png" alt="Image 6">
+                    <div class="overlay">
+                        <h3 class="slider-name animated-text top6">Top 6</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second set of 6 images -->
+            <div class="slider-set">
+                <div class="slider-card">
+                    <img src="assets/img/new-7.png" alt="Image 7">
+                    <div class="overlay">
+                        <h3 class="slider-name animated-text top7">Top 7</h3>
+                    </div>
+                </div>
+                <div class="slider-card">
+                    <img src="assets/img/new-8.png" alt="Image 8">
+                    <div class="overlay">
+                        <h3 class="slider-name animated-text top8">Top 8</h3>
+                    </div>
+                </div>
+                <div class="slider-card">
+                    <img src="assets/img/new-9.png" alt="Image 9">
+                    <div class="overlay">
+                        <h3 class="slider-name animated-text top9">Top 9</h3>
+                    </div>
+                </div>
+                <div class="slider-card">
+                    <img src="assets/img/new-10.png" alt="Image 10">
+                    <div class="overlay">
+                        <h3 class="slider-name animated-text top10">Top 10</h3>
+                    </div>
+                </div>
+                <div class="slider-card">
+                    <img src="assets/img/new-11.png" alt="Image 11">
+                    <div class="overlay">
+                        <h3 class="slider-name animated-text top11">Top 11</h3>
+                    </div>
+                </div>
+                <div class="slider-card">
+                    <img src="assets/img/new-12.png" alt="Image 12">
+                    <div class="overlay">
+                        <h3 class="slider-name animated-text top12">Top 12</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation buttons -->
+        <button class="prev-btn" id="prevBtn2">
+            <i class="fas fa-chevron-left"></i> <!-- Font Awesome left arrow icon -->
+        </button>
+        <button class="next-btn" id="nextBtn2">
+            <i class="fas fa-chevron-right"></i> <!-- Font Awesome right arrow icon -->
+        </button>
+    </div>
+</section>
+
+         <!-- ================Top 5 Movie =============== -->
+      <!-- ====================Top Trending Movie====================== -->
+      <section class="image-slider">
+         <h3 class="slider-title">Trending Movies</h3>
+       
+         <div class="slider-container">
+           <div class="slider-wrapper">
+             <!-- First set of 6 images -->
+             <div class="slider-set">
+               <div class="slider-card">
+                 <img src="assets/img/new-1.png" alt="Image 1">
+                 <div class="overlay">
+                   <h3 class="slider-name">Jurassic World</h3>
+                   <span class="slider-category">Science/Fiction</span>
+                 </div>
+               </div>
+               <div class="slider-card">
+                 <img src="assets/img/new-2.png" alt="Image 2">
+                 <div class="overlay">
+                   <h3 class="slider-name">Spider-Man No Way Home</h3>
+                   <span class="slider-category">Science/Action</span>
+                 </div>
+               </div>
+               <div class="slider-card">
+                 <img src="assets/img/new-3.png" alt="Image 3">
+                 <div class="overlay">
+                   <h3 class="slider-name">Fantastic Beasts</h3>
+                   <span class="slider-category">Adventure/Fantasy</span>
+                 </div>
+               </div>
+               <div class="slider-card">
+                 <img src="assets/img/new-4.png" alt="Image 4">
+                 <div class="overlay">
+                   <h3 class="slider-name">Toy Story</h3>
+                   <span class="slider-category">Animation</span>
+                 </div>
+               </div>
+               <div class="slider-card">
+                 <img src="assets/img/new-5.png" alt="Image 5">
+                 <div class="overlay">
+                   <h3 class="slider-name">Sonic 2</h3>
+                   <span class="slider-category">Action/Adventure</span>
+                 </div>
+               </div>
+               <div class="slider-card">
+                 <img src="assets/img/new-6.png" alt="Image 6">
+                 <div class="overlay">
+                   <h3 class="slider-name">X-Men</h3>
+                   <span class="slider-category">Science/Action</span>
+                 </div>
+               </div>
+             </div>
+       
+             <!-- Second set of 6 images -->
+             <div class="slider-set">
+               <div class="slider-card">
+                 <img src="assets/img/new-7.png" alt="Image 7">
+                 <div class="overlay">
+                   <h3 class="slider-name">Batman</h3>
+                   <span class="slider-category">Action</span>
+                 </div>
+               </div>
+               <div class="slider-card">
+                 <img src="assets/img/new-8.png" alt="Image 8">
+                 <div class="overlay">
+                   <h3 class="slider-name">Avengers</h3>
+                   <span class="slider-category">Superhero</span>
+                 </div>
+               </div>
+               <div class="slider-card">
+                 <img src="assets/img/new-9.png" alt="Image 9">
+                 <div class="overlay">
+                   <h3 class="slider-name">Avatar</h3>
+                   <span class="slider-category">Sci-Fi</span>
+                 </div>
+               </div>
+               <div class="slider-card">
+                 <img src="assets/img/new-10.png" alt="Image 10">
+                 <div class="overlay">
+                   <h3 class="slider-name">Inception</h3>
+                   <span class="slider-category">Thriller</span>
+                 </div>
+               </div>
+               <div class="slider-card">
+                 <img src="assets/img/new-11.png" alt="Image 11">
+                 <div class="overlay">
+                   <h3 class="slider-name">Star Wars</h3>
+                   <span class="slider-category">Sci-Fi</span>
+                 </div>
+               </div>
+               <div class="slider-card">
+                 <img src="assets/img/new-12.png" alt="Image 12">
+                 <div class="overlay">
+                   <h3 class="slider-name">Iron Man</h3>
+                   <span class="slider-category">Action</span>
+                 </div>
+               </div>
+             </div>
+           </div>
+       
+           <!-- Navigation buttons -->
+           <button class="prev-btn" id="prevBtn1">
+            <i class="fas fa-chevron-left"></i> <!-- Font Awesome left arrow icon -->
+          </button>
+          <button class="next-btn" id="nextBtn1">
+            <i class="fas fa-chevron-right"></i> <!-- Font Awesome right arrow icon -->
+          </button>
+          
+         </div>
+       </section>
+       <!-- ===================Top Trending Movie End -->
+      <!--==================== NEW ====================-->
+      <section class="image-slider">
+         <h3 class="slider-title">New Movies</h3>
+       
+         <div class="slider-container">
+           <div class="slider-wrapper">
+             <!-- First set of 6 images -->
+             <div class="slider-set">
+               <div class="slider-card">
+                 <img src="assets/img/new-1.png" alt="Image 1">
+                 <div class="overlay">
+                   <h3 class="slider-name">Jurassic World</h3>
+                   <span class="slider-category">Science/Fiction</span>
+                 </div>
+               </div>
+               <div class="slider-card">
+                 <img src="assets/img/new-2.png" alt="Image 2">
+                 <div class="overlay">
+                   <h3 class="slider-name">Spider-Man No Way Home</h3>
+                   <span class="slider-category">Science/Action</span>
+                 </div>
+               </div>
+               <div class="slider-card">
+                 <img src="assets/img/new-3.png" alt="Image 3">
+                 <div class="overlay">
+                   <h3 class="slider-name">Fantastic Beasts</h3>
+                   <span class="slider-category">Adventure/Fantasy</span>
+                 </div>
+               </div>
+               <div class="slider-card">
+                 <img src="assets/img/new-4.png" alt="Image 4">
+                 <div class="overlay">
+                   <h3 class="slider-name">Toy Story</h3>
+                   <span class="slider-category">Animation</span>
+                 </div>
+               </div>
+               <div class="slider-card">
+                 <img src="assets/img/new-5.png" alt="Image 5">
+                 <div class="overlay">
+                   <h3 class="slider-name">Sonic 2</h3>
+                   <span class="slider-category">Action/Adventure</span>
+                 </div>
+               </div>
+               <div class="slider-card">
+                 <img src="assets/img/new-6.png" alt="Image 6">
+                 <div class="overlay">
+                   <h3 class="slider-name">X-Men</h3>
+                   <span class="slider-category">Science/Action</span>
+                 </div>
+               </div>
+             </div>
+       
+             <!-- Second set of 6 images -->
+             <div class="slider-set">
+               <div class="slider-card">
+                 <img src="assets/img/new-7.png" alt="Image 7">
+                 <div class="overlay">
+                   <h3 class="slider-name">Batman</h3>
+                   <span class="slider-category">Action</span>
+                 </div>
+               </div>
+               <div class="slider-card">
+                 <img src="assets/img/new-8.png" alt="Image 8">
+                 <div class="overlay">
+                   <h3 class="slider-name">Avengers</h3>
+                   <span class="slider-category">Superhero</span>
+                 </div>
+               </div>
+               <div class="slider-card">
+                 <img src="assets/img/new-9.png" alt="Image 9">
+                 <div class="overlay">
+                   <h3 class="slider-name">Avatar</h3>
+                   <span class="slider-category">Sci-Fi</span>
+                 </div>
+               </div>
+               <div class="slider-card">
+                 <img src="assets/img/new-10.png" alt="Image 10">
+                 <div class="overlay">
+                   <h3 class="slider-name">Inception</h3>
+                   <span class="slider-category">Thriller</span>
+                 </div>
+               </div>
+               <div class="slider-card">
+                 <img src="assets/img/new-11.png" alt="Image 11">
+                 <div class="overlay">
+                   <h3 class="slider-name">Star Wars</h3>
+                   <span class="slider-category">Sci-Fi</span>
+                 </div>
+               </div>
+               <div class="slider-card">
+                 <img src="assets/img/new-12.png" alt="Image 12">
+                 <div class="overlay">
+                   <h3 class="slider-name">Iron Man</h3>
+                   <span class="slider-category">Action</span>
+                 </div>
+               </div>
+             </div>
+           </div>
+       
+           <!-- Navigation buttons -->
+           <button class="prev-btn" id="prevBtn2">
+            <i class="fas fa-chevron-left"></i> <!-- Font Awesome left arrow icon -->
+          </button>
+          <button class="next-btn" id="nextBtn2">
+            <i class="fas fa-chevron-right"></i> <!-- Font Awesome right arrow icon -->
+          </button>
+          
+         </div>
+       </section>
+       <!-- ==================New End================= -->
+
+       <!-- ====================series================== -->
+       <section class="image-slider">
+         <h3 class="slider-title">Latest Series</h3>
+       
+         <div class="slider-container">
+           <div class="slider-wrapper">
+             <!-- First set of 6 images -->
+             <div class="slider-set">
+               <div class="slider-card">
+                 <img src="assets/img/new-1.png" alt="Image 1">
+                 <div class="overlay">
+                   <h3 class="slider-name">Jurassic World</h3>
+                   <span class="slider-category">Science/Fiction</span>
+                 </div>
+               </div>
+               <div class="slider-card">
+                 <img src="assets/img/new-2.png" alt="Image 2">
+                 <div class="overlay">
+                   <h3 class="slider-name">Spider-Man No Way Home</h3>
+                   <span class="slider-category">Science/Action</span>
+                 </div>
+               </div>
+               <div class="slider-card">
+                 <img src="assets/img/new-3.png" alt="Image 3">
+                 <div class="overlay">
+                   <h3 class="slider-name">Fantastic Beasts</h3>
+                   <span class="slider-category">Adventure/Fantasy</span>
+                 </div>
+               </div>
+               <div class="slider-card">
+                 <img src="assets/img/new-4.png" alt="Image 4">
+                 <div class="overlay">
+                   <h3 class="slider-name">Toy Story</h3>
+                   <span class="slider-category">Animation</span>
+                 </div>
+               </div>
+               <div class="slider-card">
+                 <img src="assets/img/new-5.png" alt="Image 5">
+                 <div class="overlay">
+                   <h3 class="slider-name">Sonic 2</h3>
+                   <span class="slider-category">Action/Adventure</span>
+                 </div>
+               </div>
+               <div class="slider-card">
+                 <img src="assets/img/new-6.png" alt="Image 6">
+                 <div class="overlay">
+                   <h3 class="slider-name">X-Men</h3>
+                   <span class="slider-category">Science/Action</span>
+                 </div>
+               </div>
+             </div>
+       
+             <!-- Second set of 6 images -->
+             <div class="slider-set">
+               <div class="slider-card">
+                 <img src="assets/img/new-7.png" alt="Image 7">
+                 <div class="overlay">
+                   <h3 class="slider-name">Batman</h3>
+                   <span class="slider-category">Action</span>
+                 </div>
+               </div>
+               <div class="slider-card">
+                 <img src="assets/img/new-8.png" alt="Image 8">
+                 <div class="overlay">
+                   <h3 class="slider-name">Avengers</h3>
+                   <span class="slider-category">Superhero</span>
+                 </div>
+               </div>
+               <div class="slider-card">
+                 <img src="assets/img/new-9.png" alt="Image 9">
+                 <div class="overlay">
+                   <h3 class="slider-name">Avatar</h3>
+                   <span class="slider-category">Sci-Fi</span>
+                 </div>
+               </div>
+               <div class="slider-card">
+                 <img src="assets/img/new-10.png" alt="Image 10">
+                 <div class="overlay">
+                   <h3 class="slider-name">Inception</h3>
+                   <span class="slider-category">Thriller</span>
+                 </div>
+               </div>
+               <div class="slider-card">
+                 <img src="assets/img/new-11.png" alt="Image 11">
+                 <div class="overlay">
+                   <h3 class="slider-name">Star Wars</h3>
+                   <span class="slider-category">Sci-Fi</span>
+                 </div>
+               </div>
+               <div class="slider-card">
+                 <img src="assets/img/new-12.png" alt="Image 12">
+                 <div class="overlay">
+                   <h3 class="slider-name">Iron Man</h3>
+                   <span class="slider-category">Action</span>
+                 </div>
+               </div>
+             </div>
+           </div>
+       
+           <!-- Navigation buttons -->
+           <button class="prev-btn" id="prevBtn2">
+            <i class="fas fa-chevron-left"></i> <!-- Font Awesome left arrow icon -->
+          </button>
+          <button class="next-btn" id="nextBtn2">
+            <i class="fas fa-chevron-right"></i> <!-- Font Awesome right arrow icon -->
+          </button>
+          
+         </div>
+       </section>
+        <!-- ====================series End============= -->
+       
+      <!-- ========================Footer=============== -->
+       <!-- Footer Section -->
+<footer class="footer">
+   <div class="footer-content">
+       <div class="footer-logo">
+           <h2>MovieMagic</h2>
+       </div>
+       <div class="footer-links">
+           <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Movies</a></li>
+               <li><a href="#">Genres</a></li>
+               <li><a href="#">Top Rated</a></li>
+               <li><a href="#">Latest Releases</a></li>
+               <li><a href="#">Contact</a></li>
+               <li><a href="#">About Us</a></li>
+               <li><a href="#">FAQ</a></li>
+               <li><a href="#">Blog</a></li>
+           </ul>
+       </div>
+       <div class="footer-social">
+           <ul>
+               <li><a href="#">Instagram</a></li>
+               <li><a href="#">Twitter</a></li>
+               <li><a href="#">Facebook</a></li>
+               <li><a href="#">YouTube</a></li>
+           </ul>
+       </div>
+   </div>
+   <div class="footer-bottom">
+       <p>&copy; 2024 MovieMagic. All rights reserved.</p>
+   </div>
+</footer>
+
+       <!-- ======================Footer end ================ -->
+   </main>
+
+   <!--=============== SWIPER JS ===============-->
+   <script src="assets/js/swiper-bundle.min.js"></script>
+
+   <!--=============== MAIN JS ===============-->
+   <script src="assets/js/main.js"></script>
+   
+</body>
+
+</html>

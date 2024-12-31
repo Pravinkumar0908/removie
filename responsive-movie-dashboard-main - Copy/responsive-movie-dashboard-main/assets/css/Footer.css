@@ -1,0 +1,130 @@
+/* Footer Styles */
+.footer {
+    background-color: #212121;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    animation: slideIn 2s ease-out;
+}
+
+.footer-logo h2 {
+    font-size: 2.5rem;
+    font-family: 'Roboto', sans-serif;
+    color: #FF6347; /* Tomato color */
+    animation: fadeIn 2s ease;
+}
+
+.footer-links,
+.footer-social {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-links ul,
+.footer-social ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links a,
+.footer-social a {
+    color: #FFF;
+    text-decoration: none;
+    display: block;
+    margin: 10px 0;
+    font-size: 1.2rem;
+    font-family: 'Arial', sans-serif;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+    transform: translateX(10px); /* Hover effect with sliding */
+    color: #FFD700; /* Gold color on hover */
+}
+
+.footer-bottom {
+    background-color: #111;
+    padding: 10px 0;
+    font-size: 1rem;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Keyframe Animations */
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hover effects for links */
+.footer-links a:hover,
+.footer-social a:hover {
+    color: #FFD700; /* Gold color on hover */
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-logo h2 {
+        font-size: 2rem;
+    }
+    .footer-links,
+    .footer-social {
+        margin-bottom: 20px;
+    }
+    .footer-links a,
+    .footer-social a {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-logo h2 {
+        font-size: 1.8rem;
+    }
+    .footer-links a,
+    .footer-social a {
+        font-size: 1rem;
+    }
+}
