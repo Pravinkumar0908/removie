@@ -18,8 +18,31 @@ body {
 
 /* Slider container */
 .slider-container {
-    position: relative;
-    overflow: hidden; /* Prevents slider content from overflowing */
+  position: relative;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.slider-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.slider-wrapper {
+  display: flex;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.slider-card {
+  flex: 0 0 190px;
+  height: 290px;
+  scroll-snap-align: start;
+  border-radius: 7px;
+  transition: transform 0.3s;
 }
 
 .slider-wrapper {
